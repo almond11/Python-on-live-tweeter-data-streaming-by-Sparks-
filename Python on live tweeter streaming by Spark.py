@@ -3,7 +3,6 @@ from pyspark import SparkContext
 from pyspark.streaming import StreamingContext
 from pyspark.sql import SQLContext
 from pyspark.sql.functions import desc
-# Can only run this once. restart your kernel for any errors.
 sc = SparkContext()
 ssc = StreamingContext(sc, 10 )
 sqlContext = SQLContext(sc)
@@ -25,8 +24,7 @@ Tweet = namedtuple( 'Tweet', fields )
 from IPython import display
 import matplotlib.pyplot as plt
 import seaborn as sns
-# Only works for Jupyter Notebooks!
-%matplotlib inline 
+ %matplotlib inline 
 count = 0
 while count < 10:
     
